@@ -1,0 +1,876 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FutureCity | Smart City of Tomorrow</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Welcome to FutureCity, the smart city of tomorrow. Discover a smarter, greener and more connected way of urban living with clean energy, autonomous transit, and living architecture."
+    />
+    <meta
+      name="keywords"
+      content="FutureCity, smart city, sustainable city, cl ean energy, autonomous transit, green architecture, smart grid, eco-city"
+    />
+    <meta name="author" content="FutureCity Development Group" />
+
+    <!-- Open Graph / Social Media Meta -->
+    <meta property="og:title" content="FutureCity | Smart City of Tomorrow" />
+    <meta
+      property="og:description"
+      content="Discover a smarter, greener and more connected way of urban living."
+    />
+    <meta property="og:image" content="assets/images/hero-city.jpg" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Favicon (Inline SVG) -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2343E879'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>"
+    />
+                                         
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ========================================================================
+       1. NAVBAR — TRANSPARENT / DARK OVER HERO
+       ======================================================================== -->
+    <header class="header" id="navbar">
+      <div class="container nav-container">
+        <!-- LEFT: Futuristic Logo -->
+        <a href="#home" class="brand-logo" id="brand-logo">
+          <div class="logo-icon">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+              />
+            </svg>
+          </div>
+          <span>Future<span class="logo-green">City</span></span>
+        </a>
+
+        <!-- CENTER: Navigation Links (Single Horizontal Line on Desktop) -->
+        <nav>
+          <ul class="nav-menu">
+            <li>
+              <a href="#home" class="nav-link active has-underline">Home</a>
+            </li>
+            <li><a href="pages/about.html" class="nav-link">About</a></li>
+            <li>
+              <a href="pages/smart-city.html" class="nav-link">Smart City</a>
+            </li>
+            <li><a href="pages/features.html" class="nav-link">Features</a></li>
+            <li>
+              <a href="pages/dashboard.html" class="nav-link">Dashboard</a>
+            </li>
+            <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- RIGHT: Search Icon + Green Rounded CTA Button -->
+        <div class="nav-actions">
+          <!-- Search Icon -->
+          <button
+            class="nav-search-btn"
+            id="nav-search-btn"
+            aria-label="Search FutureCity"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Green Rounded Button -->
+          <a href="pages/contact.html" class="btn btn-join" id="btn-join"
+            >Join the Future</a
+          >
+
+          <!-- Mobile Drawer Hamburger Toggle -->
+          <button
+            class="mobile-toggle"
+            id="mobile-toggle"
+            aria-label="Toggle Mobile Navigation"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <aside class="mobile-nav" id="mobile-nav">
+      <div>
+        <div class="brand-logo" style="margin-bottom: 2rem">
+          <div class="logo-icon">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.3"
+            >
+              <path
+                d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+              />
+            </svg>
+          </div>
+          <span>Future<span class="logo-green">City</span></span>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+          <li><a href="pages/about.html" class="mobile-nav-link">About</a></li>
+          <li>
+            <a href="pages/smart-city.html" class="mobile-nav-link"
+              >Smart City</a
+            >
+          </li>
+          <li>
+            <a href="pages/features.html" class="mobile-nav-link">Features</a>
+          </li>
+          <li>
+            <a href="pages/dashboard.html" class="mobile-nav-link">Dashboard</a>
+          </li>
+          <li>
+            <a href="pages/contact.html" class="mobile-nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>  
+      <div>
+        <a
+          href="pages/contact.html"
+          class="btn btn-join"
+          style="width: 100%; text-align: center"
+          >Join the Future</a
+        >
+      </div>
+    </aside>
+                           
+    <!-- ========================================================================
+       2. HERO SECTION — FULL-WIDTH SMART CITY BACKGROUND (550px–650px)
+       ======================================================================== -->
+    <section class="hero" id="home">
+      <div class="container hero-container">
+        <!-- HERO LEFT CONTENT -->
+        <div class="hero-content">
+          <div class="hero-label">
+            <span class="dot"></span>
+            <span>SMART &bull; SUSTAINABLE &bull; CONNECTED</span>
+          </div>
+
+          <h1 class="hero-title">
+            Welcome to the<br />
+            <span class="text-green">City of Tomorrow</span>
+          </h1>
+
+          <p class="hero-desc">
+            Discover a smarter, greener and more connected way of urban living.
+          </p>
+
+          <div class="hero-btn-group">
+            <a
+              href="pages/smart-city.html"
+              class="btn btn-hero-primary"
+              id="hero-btn-explore"
+            >
+              Explore FutureCity &rarr;
+            </a>
+            <button class="btn btn-hero-video" id="hero-watch-btn">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>Watch Video</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- HERO RIGHT SIDE: MOTTO BOX -->
+        <div class="hero-right-side">
+          <div class="hero-motto-box">
+            <div class="motto-line">A cleaner planet.</div>
+            <div class="motto-line">A smarter city.</div>
+            <div class="motto-line">A brighter future.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       3. SMART CITY SOLUTIONS (6 CARDS GRID)
+       ======================================================================== -->
+    <section class="solutions-section" id="solutions">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Urban Solutions</div>
+          <h2 class="section-title">Smart City Solutions</h2>
+          <p class="section-subtitle">
+            Intelligent infrastructure engineered for carbon-neutral living,
+            resilient urban growth, and next-generation connectivity.
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+          <!-- Card 1: Clean Energy & Microgrids -->
+          <article class="solution-card">
+            <div class="solution-img-wrapper">
+              <img
+                src="assets/images/clean_energy_1790451990590.jpg"
+                alt="FutureCity Clean Energy Grid and Solar Trees"
+              />
+              <span class="solution-tag-pill">Energy</span>
+            </div>
+            <div class="solution-body">
+              <h3 class="solution-title">Clean Energy & Microgrids</h3>
+              <p class="solution-text">
+                Biomimetic quantum solar trees and kinetic atmospheric grids
+                powering neighborhoods with 100% renewable energy without carbon
+                output.
+              </p>
+              <div class="solution-metric">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                </svg>
+                <span>850 MW Grid Output &bull; 0g Emissions</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Autonomous Eco-Transit -->
+          <article class="solution-card">
+            <div class="solution-img-wrapper">
+              <img
+                src="assets/images/green_transport_1790452049934.jpg"
+                alt="Autonomous Maglev Transit Pods in Green Viaducts"
+              />
+              <span class="solution-tag-pill">Mobility</span>
+            </div>
+            <div class="solution-body">
+              <h3 class="solution-title">Autonomous Eco-Transit</h3>
+              <p class="solution-text">
+                Elevated magnetic levitation transport pods gliding over
+                botanical skyways, delivering silent, zero-emission mass urban
+                transit.
+              </p>
+              <div class="solution-metric">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <span>350 km/h Velocity &bull; Zero Noise</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Living Biophilic Architecture -->
+          <article class="solution-card">
+            <div class="solution-img-wrapper">
+              <img
+                src="assets/images/smart_architecture_1790452018990.jpg"
+                alt="Living Vertical Forest Skyscraper Towers"
+              />
+              <span class="solution-tag-pill">Architecture</span>
+            </div>
+            <div class="solution-body">
+              <h3 class="solution-title">Living Forest Architecture</h3>
+              <p class="solution-text">
+                High-rise habitats wrapped in spiraling biological terraces that
+                actively scrub particulate matter and cool residential interiors
+                naturally.
+              </p>
+              <div class="solution-metric">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                </svg>
+                <span>65% Green Canopy &bull; 420m Height</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Urban Biospheres & Domes -->
+          <article class="solution-card">
+            <div class="solution-img-wrapper">
+              <img
+                src="assets/images/biosphere_dome_1790451944188.jpg"
+                alt="Geodesic Urban Rainforest Biosphere Dome"
+              />
+              <span class="solution-tag-pill">Biospheres</span>
+            </div>
+            <div class="solution-body">
+              <h3 class="solution-title">Urban Biospheres & Domes</h3>
+              <p class="solution-text">
+                Climate-controlled geodesic domes preserving botanical
+                ecosystems, balancing city humidity, and providing lush
+                community parklands.
+              </p>
+              <div class="solution-metric">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  />
+                </svg>
+                <span>120,000 Citizens &bull; 100% Pure Air</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Automated AI Hydroponics -->
+          <article class="solution-card">
+            <div class="solution-img-wrapper">
+              <img
+                src="assets/images/hydroponic_ai_1790451963010.jpg"
+                alt="Automated AI Hydroponic Farming Arrays"
+              />
+              <span class="solution-tag-pill">Food Systems</span>
+            </div>
+            <div class="solution-body">
+              <h3 class="solution-title">Automated AI Hydroponics</h3>
+              <p class="solution-text">
+                Precision vertical agriculture powered by AI computer vision and
+                nutrient sensors, supplying locally grown organic produce
+                year-round.
+              </p>
+              <div class="solution-metric">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path
+                    d="M3 21h18M9 8h1m-1 4h1m-1 4h1m4-8h1m-1 4h1m-1 4h1M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"
+                  />
+                </svg>
+                <span>45 Tons Daily Yield &bull; 95% Less Water</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Circular Resource Ecology -->
+          <article class="solution-card">
+            <div class="solution-img-wrapper">
+              <img
+                src="assets/images/hero-city.jpg"
+                alt="FutureCity Waterfront Eco-District Masterplan"
+              />
+              <span class="solution-tag-pill">Circularity</span>
+            </div>
+            <div class="solution-body">
+              <h3 class="solution-title">Circular Resource Ecology</h3>
+              <p class="solution-text">
+                Closed-loop municipal bio-digesters and advanced canal
+                filtration systems converting waste into energy and recycling
+                100% of city water.
+              </p>
+              <div class="solution-metric">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="23 4 23 10 17 10" />
+                  <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
+                </svg>
+                <span>100% Circular Water &bull; Zero Landfill</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       4. IMPACT SECTION (ANIMATED METRICS)
+       ======================================================================== -->
+    <section class="impact-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Measurable Results</div>
+          <h2 class="section-title">Our Planetary Impact</h2>
+          <p class="section-subtitle">
+            Real-time metrics demonstrating how FutureCity transforms
+            sustainability into tangible ecological recovery.
+          </p>
+        </div>
+
+        <div class="impact-grid">
+          <div class="impact-card">
+            <div
+              class="impact-number"
+              data-target="1.42"
+              data-suffix="M+"
+              data-decimals="2"
+            >
+              0.00M+
+            </div>
+            <div class="impact-label">CO2 Reduced Annually</div>
+            <div class="impact-sub">Metric Tons Sequestered</div>
+          </div>
+
+          <div class="impact-card">
+            <div
+              class="impact-number"
+              data-target="98.7"
+              data-suffix="%"
+              data-decimals="1"
+            >
+              0.0%
+            </div>
+            <div class="impact-label">Renewable Energy Share</div>
+            <div class="impact-sub">Zero-Fossil Microgrid</div>
+          </div>
+
+          <div class="impact-card">
+            <div
+              class="impact-number"
+              data-target="350"
+              data-suffix=" km"
+              data-decimals="0"
+            >
+              0 km
+            </div>
+            <div class="impact-label">Clean Transit Network</div>
+            <div class="impact-sub">Autonomous Levitation Track</div>
+          </div>
+
+          <div class="impact-card">
+            <div
+              class="impact-number"
+              data-target="450"
+              data-suffix="k+"
+              data-decimals="0"
+            >
+              0k+
+            </div>
+            <div class="impact-label">Connected Citizens</div>
+            <div class="impact-sub">Thriving in Green Districts</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       5. CITY DASHBOARD SECTION
+       ======================================================================== -->
+    <section class="dashboard-section" id="dashboard">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Real-Time Telemetry</div>
+          <h2 class="section-title">City Operations Dashboard</h2>
+          <p class="section-subtitle">
+            Monitor real-time environmental indices, microgrid performance, and
+            autonomous fleet health across all metropolitan sectors.
+          </p>
+        </div>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-header-bar">
+            <div class="dashboard-status-indicator">
+              <span class="pulse"></span>
+              <span
+                >SYSTEM KERNEL v5.2 ACTIVE &bull; ALL DISTRICTS
+                OPERATIONAL</span
+              >
+            </div>
+
+            <div class="dashboard-tabs">
+              <button class="dash-tab-btn active" data-tab="grid">
+                Energy Grid
+              </button>
+              <button class="dash-tab-btn" data-tab="transit">
+                Eco-Transit
+              </button>
+              <button class="dash-tab-btn" data-tab="air">Air & Biome</button>
+            </div>
+          </div>
+
+          <div class="dashboard-grid">
+            <!-- Metric 1: Air Quality -->
+            <div class="dash-metric-card">
+              <div class="dash-metric-label">Atmospheric Purity Index</div>
+              <div class="dash-metric-value" id="dash-air-val">
+                98.8<span>%</span>
+              </div>
+              <div class="dash-progress-track">
+                <div class="dash-progress-fill" style="width: 98.8%"></div>
+              </div>
+            </div>
+
+            <!-- Metric 2: Solar Generation -->
+            <div class="dash-metric-card">
+              <div class="dash-metric-label">Clean Power Generation</div>
+              <div class="dash-metric-value" id="dash-power-val">
+                94.4<span>GW</span>
+              </div>
+              <div class="dash-progress-track">
+                <div class="dash-progress-fill" style="width: 94.4%"></div>
+              </div>
+            </div>
+
+            <!-- Metric 3: Transit Efficiency -->
+            <div class="dash-metric-card">
+              <div class="dash-metric-label">Autonomous Transit Sync</div>
+              <div class="dash-metric-value" id="dash-transit-val">
+                99.6<span>%</span>
+              </div>
+              <div class="dash-progress-track">
+                <div class="dash-progress-fill" style="width: 99.6%"></div>
+              </div>
+            </div>
+
+            <!-- Metric 4: Water Recirculation -->
+            <div class="dash-metric-card">
+              <div class="dash-metric-label">Closed-Loop Water Cycle</div>
+              <div class="dash-metric-value" id="dash-water-val">
+                100<span>%</span>
+              </div>
+              <div class="dash-progress-track">
+                <div class="dash-progress-fill" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              font-family: var(--font-mono);
+              font-size: 0.8rem;
+              color: var(--text-dim);
+              text-align: center;
+            "
+          >
+            DATASTREAM UPDATED EVERY 3.0 SECONDS VIA SECURE DISTRIBUTED MESH
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       6. WATCH OUR VISION SECTION
+       ======================================================================== -->
+    <section class="vision-section">
+      <div class="container">
+        <div class="vision-card">
+          <div class="vision-content">
+            <button
+              class="play-button"
+              id="vision-play-btn"
+              aria-label="Play Vision Film"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </button>
+            <div
+              class="section-tag"
+              style="background: rgba(67, 232, 121, 0.2)"
+            >
+              FutureCity Vision
+            </div>
+            <h2 class="vision-title">
+              Experience the City of Tomorrow in Motion
+            </h2>
+            <p class="vision-desc">
+              Take a cinematic fly-through tour showing how clean transit,
+              vertical sky-forests, and self-regulating biospheres create an
+              integrated urban sanctuary.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       7. ABOUT FUTURECITY SECTION
+       ======================================================================== -->
+    <section class="contact-section" id="about">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <div class="section-tag">About FutureCity</div>
+          <h3>Architecting Human & Ecological Harmony</h3>
+          <p>
+            FutureCity is a global initiative dedicated to designing, financing,
+            and constructing carbon-negative urban environments. By uniting
+            cutting-edge clean tech with living systems, we prove that modern
+            cities can generate more energy, pure water, and fresh air than they
+            consume.
+          </p>
+
+          <div class="contact-perks">
+            <div class="perk-item">
+              <div class="check">&#10003;</div>
+              <span
+                >100% Zero-Fossil Energy Microgrids with Battery Buffering</span
+              >
+            </div>
+            <div class="perk-item">
+              <div class="check">&#10003;</div>
+              <span
+                >Autonomous Maglev and Pedestrian-First Street Planning</span
+              >
+            </div>
+            <div class="perk-item">
+              <div class="check">&#10003;</div>
+              <span
+                >Biophilic Living Architecture Certified for Net Carbon
+                Negative</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact / Join Consultation Form -->
+        <div class="contact-form-box" id="contact">
+          <h4 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: #fff">
+            Join the Future
+          </h4>
+          <p
+            style="
+              font-size: 0.9rem;
+              color: var(--text-muted);
+              margin-bottom: 1.5rem;
+            "
+          >
+            Inquire about smart city partnership, development blueprints, or
+            regional pilot programs.
+          </p>
+
+          <form id="futurecity-form">
+            <div class="form-field">
+              <label class="form-label" for="user-name">Full Name</label>
+              <input
+                type="text"
+                id="user-name"
+                class="form-input"
+                placeholder="e.g. Elena Rostova"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="user-email">Email Address</label>
+              <input
+                type="email"
+                id="user-email"
+                class="form-input"
+                placeholder="elena@futurecity.org"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="user-message"
+                >Inquiry / Project Details</label
+              >
+              <textarea
+                id="user-message"
+                class="form-input"
+                placeholder="Tell us about your city project or partnership..."
+                required
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-join"
+              id="form-submit-btn"
+              style="width: 100%"
+            >
+              Submit Inquiry &rarr;
+            </button>
+
+            <div class="form-toast" id="form-toast">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span
+                >Thank you! Your inquiry has been sent to our FutureCity
+                planning team.</span
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       8. FOOTER
+       ======================================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <!-- Brand Info -->
+          <div class="footer-brand">
+            <a href="#home" class="brand-logo">
+              <div class="logo-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.3"
+                >
+                  <path
+                    d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                  />
+                </svg>
+              </div>
+              <span>Future<span class="logo-green">City</span></span>
+            </a>
+            <p>
+              Building next-generation smart, sustainable, and connected urban
+              habitats for tomorrow.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-col">
+            <h4>Smart City</h4>
+            <ul class="footer-links">
+              <li><a href="pages/smart-city.html">Energy Grids</a></li>
+              <li><a href="pages/smart-city.html">Eco-Transit</a></li>
+              <li><a href="pages/smart-city.html">Living Architecture</a></li>
+              <li><a href="pages/smart-city.html">Biospheres</a></li>
+            </ul>
+          </div>
+
+          <!-- Solutions -->
+          <div class="footer-col">
+            <h4>Platform</h4>
+            <ul class="footer-links">
+              <li><a href="pages/about.html">About FutureCity</a></li>
+              <li><a href="pages/features.html">Impact Metrics</a></li>
+              <li><a href="pages/dashboard.html">City Dashboard</a></li>
+              <li><a href="pages/contact.html">Contact Support</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="footer-col footer-newsletter">
+            <h4>Stay Connected</h4>
+            <p>
+              Subscribe for updates on smart city pilot projects and urban
+              innovation.
+            </p>
+            <form class="newsletter-form" id="newsletter-form">
+              <input
+                type="email"
+                placeholder="Your email address"
+                required
+                aria-label="Newsletter Email"
+              />
+              <button
+                type="submit"
+                class="newsletter-btn"
+                aria-label="Subscribe"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>&copy; 2026 FutureCity Inc. All Rights Reserved.</div>
+          <div>Smart &bull; Sustainable &bull; Connected</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
